@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Match Star Rater</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            body {
+                font-family:Verdana, Arial, sans-serif;
+          
+            }
+            div.form-group{
+                padding-top: 20px;
+            }
+            legend {
+                font-size:26px;
+                font-weight:bold;
+            }
+            label.col-md-4 {
+                font-weight: bold;
+                padding-bttom: 20px;
+            }
+            input.submit {
+                height: 40px;
+                width: 86px;
+                text-align: center;
+                font-weight: bold;
+                font-size: 17px;
+                margin-top: 20px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <form class="form-horizontal" action="Results.do" method="POST">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Match Questions</legend>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="execution">What were your thoughts on the match's execution and timing of spots?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="execution-0">
+      <input type="radio" name="execution" id="execution-0" value="0" checked="checked">
+      Terrible
+    </label>
+	</div>
+      <div class="radio">
+    <label for="execution-1">
+      <input type="radio" name="execution" id="execution-1" value="1" checked="checked">
+      Very Bad
+    </label>
+	</div>
+  <div class="radio">
+    <label for="execution-2">
+      <input type="radio" name="execution" id="execution-2" value="1.5">
+      Poor
+    </label>
+	</div>
+  <div class="radio">
+    <label for="execution-3">
+      <input type="radio" name="execution" id="execution-3" value="2">
+      Average
+    </label>
+	</div>
+  <div class="radio">
+    <label for="execution-4">
+      <input type="radio" name="execution" id="execution-4" value="2.5">
+      Solid
+    </label>
+	</div>
+  <div class="radio">
+    <label for="execution-5">
+      <input type="radio" name="execution" id="execution-5" value="3">
+      Good
+    </label>
+	</div>
+  <div class="radio">
+    <label for="execution-6">
+      <input type="radio" name="execution" id="execution-6" value="3.5">
+      Very Good
+    </label>
+	</div>
+  <div class="radio">
+    <label for="execution-7">
+      <input type="radio" name="execution" id="execution-7" value="4">
+      Great
+    </label>
+	</div>
+  <div class="radio">
+    <label for="execution-8">
+      <input type="radio" name="execution" id="execution-8" value="4.5">
+      Excellent
+    </label>
+	</div>
+  <div class="radio">
+    <label for="execution-8">
+      <input type="radio" name="execution" id="execution-8" value="5.0">
+      This was the best I've Ever Seen
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="heat">How would you best describe the crowd interaction in the match?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="heat-0">
+      <input type="radio" name="heat" id="heat-0" value="0.5" checked="checked">
+      The crowd turned on the match
+    </label>
+	</div>
+  <div class="radio">
+    <label for="heat-1">
+      <input type="radio" name="heat" id="heat-1" value="1">
+      The crowd was dead
+    </label>
+	</div>
+  <div class="radio">
+    <label for="heat-2">
+      <input type="radio" name="heat" id="heat-2" value="2.5">
+      There were points the crowd was into it, but there were dead points as well
+    </label>
+	</div>
+  <div class="radio">
+    <label for="heat-3">
+      <input type="radio" name="heat" id="heat-3" value="3">
+      The crowd was into it
+    </label>
+	</div>
+  <div class="radio">
+    <label for="heat-4">
+      <input type="radio" name="heat" id="heat-4" value="3.5">
+      The crowd was really into it
+    </label>
+	</div>
+  <div class="radio">
+    <label for="heat-5">
+      <input type="radio" name="heat" id="heat-5" value="4">
+      The crowd was really into it as if it were the main event
+    </label>
+	</div>
+  <div class="radio">
+    <label for="heat-6">
+      <input type="radio" name="heat" id="heat-6" value="4.5">
+      The crowd was absolutely insane
+    </label>
+	</div>
+  <div class="radio">
+    <label for="heat-7">
+      <input type="radio" name="heat" id="heat-7" value="5.0">
+      This was one of the most heated matches, if not the most heated match of the year
+    </label>
+	</div>
+  <div class="radio">
+    <label for="heat-8">
+      <input type="radio" name="heat" id="heat-8" value="99">
+      I do not wish to factor the crowd into the match rating
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="action_diff">What statement best represents your thoughts on the amount of action, effort and difficulty level of spots and moves in this match?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="action_diff-0">
+      <input type="radio" name="action_diff" id="action_diff-0" value="1" checked="checked">
+      The match was slow and boring
+    </label>
+	</div>
+  <div class="radio">
+    <label for="action_diff-1">
+      <input type="radio" name="action_diff" id="action_diff-1" value="2">
+      Nothing special 
+    </label>
+	</div>
+  <div class="radio">
+    <label for="action_diff-2">
+      <input type="radio" name="action_diff" id="action_diff-2" value="2.5">
+      Fairly basic, but about what you'd see in a good free TV match in the middle of a show
+    </label>
+	</div>
+  <div class="radio">
+    <label for="action_diff-3">
+      <input type="radio" name="action_diff" id="action_diff-3" value="3">
+      What you'd expect from an upper mid-card match between two good workers
+    </label>
+	</div>
+  <div class="radio">
+    <label for="action_diff-4">
+      <input type="radio" name="action_diff" id="action_diff-4" value="3.5">
+      What you would expect from two really good workers in a big match
+    </label>
+	</div>
+  <div class="radio">
+    <label for="action_diff-5">
+      <input type="radio" name="action_diff" id="action_diff-5" value="4">
+      They put it all out there and tried to have a match of the year
+    </label>
+	</div>
+  <div class="radio">
+    <label for="action_diff-6">
+      <input type="radio" name="action_diff" id="action_diff-6" value="4.5">
+      They were doing a lot of crazy spots that were unbelievable
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="story">What statement do you think best describes the story this match?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="story-0">
+      <input type="radio" name="story" id="story-0" value="2.5" checked="checked">
+      It was a regular match with a decent story and layout
+    </label>
+	</div>
+  <div class="radio">
+    <label for="story-1">
+      <input type="radio" name="story" id="story-1" value="1">
+      It was a nothing match
+    </label>
+	</div>
+  <div class="radio">
+    <label for="story-2">
+      <input type="radio" name="story" id="story-2" value="1.5">
+      It was a basic squash match
+    </label>
+	</div>
+  <div class="radio">
+    <label for="story-3">
+      <input type="radio" name="story" id="story-3" value="2.25">
+      The story of the match was not that good although it did get enough time to tell a story
+    </label>
+	</div>
+  <div class="radio">
+    <label for="story-4">
+      <input type="radio" name="story" id="story-4" value="2.50">
+      The story of the match was solid
+    </label>
+	</div>
+  <div class="radio">
+    <label for="story-5">
+      <input type="radio" name="story" id="story-5" value="3">
+      The story of the match was good and well laid out
+    </label>
+	</div>
+  <div class="radio">
+    <label for="story-6">
+      <input type="radio" name="story" id="story-6" value="3.5">
+      The story of this match was very good, but not quite at the level of great
+    </label>
+	</div>
+  <div class="radio">
+    <label for="story-7">
+      <input type="radio" name="story" id="story-7" value="4">
+      The match had a great story with lots of drama. Definitely a big match
+    </label>
+	</div>
+      <div class="radio">
+    <label for="story-8">
+      <input type="radio" name="story" id="story-8" value="4.5">
+      The match told an incredible story and felt huge
+    </label>
+	</div>
+  <div class="radio">
+    <label for="story-9">
+      <input type="radio" name="story" id="story-9" value="5">
+      This was some of the best storytelling I've ever seen
+    </label>
+	</div>
+  </div>
+</div>
+
+<input class="submit" type="submit" value="SUBMIT">
+
+</fieldset>
+</form>
+
+    </body>
+</html>
