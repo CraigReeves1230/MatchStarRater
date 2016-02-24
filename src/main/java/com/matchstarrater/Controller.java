@@ -20,7 +20,7 @@ class Controller extends HttpServlet {
         // Create new model object
         Model model = new Model();
         
-        // Calculate star rating
+        // Get the star rating of the match
         String star_rating = model.calculate(execution, heat, action, story);
     
         // Print star rating
