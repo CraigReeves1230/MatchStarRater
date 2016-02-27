@@ -16,17 +16,28 @@ class Controller extends HttpServlet {
         float heat = Float.parseFloat(req.getParameter("heat"));
         float action = Float.parseFloat(req.getParameter("action_diff"));
         float story = Float.parseFloat(req.getParameter("story"));
+       
         
         // Create new model object
         Model model = new Model();
         
         // Get star rating of match
         String star_rating = model.calculate(execution, heat, action, story);
+        
+        // Create session
+        HttpSession session = req.getSession();
+        
+        // Store match rating into attribute
+        session.setAttribute("star_rating", star_rating);
+        
+        // Dispatch to JSP to display
+        RequestDispatcher dispatch = req.getRequestDispatcher("result.jsp");
+        dispatch.forward(req, res);
     
         // Print star rating
-        res.setContentType("text/html");
-        PrintWriter out = res.getWriter();
-        out.println("<h1>Star Rating for this match: " + star_rating + "</h1>");
+        // res.setContentType("text/html");
+        //PrintWriter out = res.getWriter();
+        // out.println("<h1>Star Rating for this match: " + star_rating + "</h1>");
     }
     
     @Override
