@@ -1,7 +1,7 @@
 <%-- 
     Document   : result
     Created on : Feb 27, 2016, 6:32:21 AM
-    Author     : reeve
+    Author     : Craig Reeves
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -17,6 +17,8 @@
         <style>
             body {
                 font-family:verdana, arial, sans-serif;
+                background:black;
+                color:white;
             }
             p {
                 text-align:center;
@@ -26,7 +28,7 @@
     </head>
     <body>
         <h1 style="text-align:center;">MATCH STAR RATING</h1>
-        <h1 style="text-align:center;"><%=rating%></h1>
+        <h1 style="text-align:center; font-size:60px;"><%=rating%></h1>
         <br><br>
         <p><a href = "index.html">BACK</a></p>
     </body>

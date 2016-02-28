@@ -34,10 +34,6 @@ class Controller extends HttpServlet {
         RequestDispatcher dispatch = req.getRequestDispatcher("result.jsp");
         dispatch.forward(req, res);
     
-        // Print star rating
-        // res.setContentType("text/html");
-        //PrintWriter out = res.getWriter();
-        // out.println("<h1>Star Rating for this match: " + star_rating + "</h1>");
     }
     
     @Override
