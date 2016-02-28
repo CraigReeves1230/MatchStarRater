@@ -17,8 +17,6 @@
         <style>
             body {
                 font-family:verdana, arial, sans-serif;
-                background:black;
-                color:white;
             }
             p {
                 text-align:center;
