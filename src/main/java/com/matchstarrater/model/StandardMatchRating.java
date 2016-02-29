@@ -1,10 +1,12 @@
-package com.matchstarrater;
+package com.matchstarrater.model;
 
-public class Model {
+public class StandardMatchRating implements MatchRating {
     
     boolean factoring_heat;
+    StarRating star_rating;
     
     //Calculate star rating
+    @Override
     public String calculate(float execution, float heat, float action, float story) {
         
         // Determine first if heat is being factored
@@ -18,7 +20,8 @@ public class Model {
         float score = calculateMatchScore(execution, heat, action, story);
         
         // Convert it to a match star rating
-        return convertToStarRating(score);
+        star_rating = new StarRating(score);
+        return star_rating.value();
     }
     
     private float calculateMatchScore(float execution, float heat, float action, float story) {
@@ -36,7 +39,7 @@ public class Model {
         score = filterScore(execution, heat, action, story, score);
         
         return score;
-    }    
+    } 
     
     private float filterScore(float execution, float heat, float action, float story, float score) {
         
@@ -70,50 +73,6 @@ public class Model {
         return score;
     }
     
-    private String convertToStarRating(float score) {
-        if (score < 0.25) { return "DUD";
-    }
-        if ((score >= 0.25) & (score < 0.5)) { return "1/4*";
-    }
-        if ((score >= 0.5) & (score < 0.75)) { return "1/2*";
-    }
-        if ((score >= 0.75) & (score < 1)) { return "3/4*";
-    }
-        if ((score >= 1) & (score < 1.25)) { return "*";
-    }
-        if ((score >= 1.25) & (score < 1.50)) { return "*1/4";
-    }
-        if ((score >= 1.5) & (score < 1.75)) { return "*1/2";
-    }
-        if ((score >= 1.75) & (score < 2)) { return "*3/4";
-    }
-        if ((score >= 2) & (score < 2.25)) { return "**";
-    }
-        if ((score >= 2.25) & (score < 2.5)) { return "**1/4";
-    }
-        if ((score >= 2.5) & (score < 2.75)) { return "**1/2";
-    }
-        if ((score >= 2.75) & (score < 3)) { return "**3/4";
-    }
-        if ((score >= 3) & (score < 3.25)) { return "***";
-    }
-        if ((score >= 3.25) & (score < 3.5)) { return "***1/4";
-    }
-        if ((score >= 3.5) & (score < 3.75)) { return "***1/2";
-    }
-        if ((score >= 3.75) & (score < 4)) { return "***3/4";
-    }
-        if ((score >= 4) & (score < 4.25)) { return "****";
-    }
-        if ((score >= 4.25) & (score < 4.5)) { return "****1/4";
-    }
-        if ((score >= 4.5) & (score < 4.75)) { return "****1/2";
-    }
-        if ((score >= 4.75) & (score < 4.90)) { return "****3/4";
-    }
-        else { return "*****";
-    }
-}
    
 }
 
