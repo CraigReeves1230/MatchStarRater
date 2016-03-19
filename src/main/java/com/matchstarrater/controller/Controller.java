@@ -18,7 +18,7 @@ class Controller extends HttpServlet implements Serializable {
         // Get the ratings
         float execution = Float.parseFloat(req.getParameter("execution"));
         float heat = Float.parseFloat(req.getParameter("heat"));
-        float action = Float.parseFloat(req.getParameter("action_diff"));
+        float action = Float.parseFloat(req.getParameter("action"));
         float story = Float.parseFloat(req.getParameter("story"));
         
         // Store all of these in session

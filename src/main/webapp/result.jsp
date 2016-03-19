@@ -33,21 +33,28 @@
             rating = new StandardMatchRating();
             rating_value = rating.calculate(execution, heat, action, story);
         %>
-        <style>
-            body {
-                font-family:verdana, arial, sans-serif;
-            }
-            p {
-                text-align:center;
-                font-size:20px;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     
     <body>
-        <h1 style="text-align:center;">MATCH STAR RATING</h1>
-        <h1 style="text-align:center; font-size:60px;"><%=rating_value%></h1>
-        <br><br>
-        <p><a href = "index.html">BACK</a></p>
+        <div class="navbar">
+            <nav class="main-navigation">
+                <ul>
+                    <img id="MSRLogo" src="MSRLogo.gif" alt="Logo">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="matchstarrater.html">MATCH STAR RATER</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="fixed-wrapper">
+            <h2 style="text-align:center; font-size: 40px">MATCH STAR RATING</h2>
+            <h2 style="text-align:center; font-size:60px;"><%=rating_value%></h2>
+            <br><br>
+            <p style="text-align:center;"><a href = "matchstarrater.html">BACK</a></p>
+        </div>
+        <div class='footer'>Copyright &copy 2016 Match Star Rater</div>
     </body>
 </html>
