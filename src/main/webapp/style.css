@@ -1,0 +1,220 @@
+body {
+    background-image: url("background.jpg");
+    margin:0px;
+    padding:0px;
+}
+
+.navbar {
+    height: 40px;
+    width: 100%;
+    padding:0px;
+    margin: 0px;
+    position: absolute;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+    background-color: grey;
+    color: white;
+    z-index: 1;
+}
+
+.main-navigation {
+   width: 800px;
+   margin: 0px auto;
+   padding:0px;
+   z-index: 2;
+}
+
+.main-navigation ul {
+    list-style-type: none;
+    position: relative;
+    top: -4px;
+    left: 35px;
+}
+
+.main-navigation ul li {
+    margin-right: 65px;
+    float: left;
+}
+
+.main-navigation ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-navigation ul li a:hover{
+    color: yellow;
+}
+
+#MSRLogo {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    width: 128px;
+    left: -215px;
+    top: -12px;
+}
+
+.fixed-wrapper {
+    margin: 0 auto;
+    width: 720px;
+    height: 880px;
+    padding: 55px;
+    padding-top: 60px;
+    padding-bottom: 90px;
+    font-family: arial, sans-serif;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.submitbutton {
+    margin: auto 0;
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    left: 289px;
+}
+
+.control-label {
+    font-weight: bold;
+}
+
+fieldset {
+  border: none;
+}
+
+.scrolling-wrapper {
+    margin: 0 auto;
+    width: 720px;
+    min-height: 100vh;
+    height: 100%;
+    padding: 55px;
+    padding-top: 60px;
+    padding-bottom: 90px;
+    font-family: arial, sans-serif;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-story {
+    width: 700px;
+    margin-bottom: 100px;
+    
+}
+
+.news-story img {
+    width: 500px;
+    height: 300px;
+}
+
+.featurestory {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    left: 370px;
+    top: -500px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.featurestory img {
+    max-height: 350px;
+    max-width: 350px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+ h1 {
+    width: fit-content;
+    background-color: slategray;
+    color: white;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.newsupdates {
+    width: 315px;
+    height: 520px;
+    overflow: hidden;
+}
+
+.updateslist {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.updateslist li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    border-bottom: solid 1px darkgray; 
+}
+
+.updateslist li a:hover {
+    color: red;
+}
+
+.poll {
+    position: relative;
+    top: -980px;
+    width: 350px;
+    height: 300px;
+    margin: 0px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.poll form {
+    margin: 0px;
+    padding: 0px;
+}
+
+.craigscorner {
+    position: relative;
+    left: 372px;
+    top: -500px;
+    width: 350px;
+    padding: 0px;
+    margin: 0px;
+    height: 550px;
+}
+
+.craigscorner img {
+    max-height: 350px;
+    max-width: 350px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer {
+    height: 31px;
+    width: 100%;
+    padding-top:11px;
+    margin: 0px;
+    text-align: center;
+    position: absolute;
+    font-weight: normal;
+    font-family: arial, sans-serif;
+    background-color: grey;
+    color: white;
+    z-index: 1;
+}
